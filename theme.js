@@ -12,7 +12,7 @@ export const theme = createTheme({
     },
     olive: {
       main: "#07634C",
-      light: "#1DD283",
+      light: "#2DF8C5",
     },
     btn:{
       main:'#2DF8C5',

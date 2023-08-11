@@ -46,7 +46,6 @@ const Section2 = () => {
           padding: "1rem 0",
         }}
       >
-
         <Typography sx={{ width: "400px" }} variant="h4" fontWeight={"bold"}>
           Modern Work Experience-Based Learning Approach
         </Typography>
@@ -68,9 +67,14 @@ const Section2 = () => {
       </Container>
       <Container
         maxWidth="lg"
-        sx={{ display: "flex", justifyContent: "center", gap: "2rem",alignItems:'center' }}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "2rem",
+          alignItems: "center",
+        }}
       >
-                  <KeyboardArrowLeftOutlined sx={{cursor:'pointer'}} />
+        <KeyboardArrowLeftOutlined sx={{ cursor: "pointer" }} />
 
         {data.map((item, index) => {
           return (
@@ -88,7 +92,10 @@ const Section2 = () => {
                 maxWidth="sm"
                 sx={{
                   width: "190px",
-                  color: "white",alignItems:'center',display:'flex',justifyContent:'center'
+                  color: "white",
+                  alignItems: "center",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
                 <Box
@@ -101,13 +108,12 @@ const Section2 = () => {
                         ? "#02BF91"
                         : "btn.background",
                     borderRadius: "10px",
-                
                   }}
                 >
                   <Typography
                     fontWeight="bold"
                     variant="subtitle2"
-                    fontSize='14px'
+                    fontSize="14px"
                   >
                     {item.type}
                   </Typography>
@@ -157,24 +163,33 @@ const Section2 = () => {
             </Box>
           );
         })}
-        <KeyboardArrowRightOutlined sx={{cursor:'pointer'}} />
+        <KeyboardArrowRightOutlined sx={{ cursor: "pointer" }} />
       </Container>
-      <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',marginTop:'2rem'}} >
-      <Button
-            fontWeight="bold"
-            color="yellow"
-            sx={{
-              color: "black",
-              fontWeight: "bold",
-              borderRadius: ".8rem",
-              padding: "1rem 1rem",boxShadow:' -1px 10px 28px -8px rgba(255,255,48,0.7)',
-                '&:hover':{boxShadow:'none'}
-            }}
-            variant="contained"
-            endIcon={<KeyboardArrowRightOutlined />}
-          >
-            Book Your Free Trail, Now{" "}
-          </Button>
+      <Container
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <Button
+          fontWeight="bold"
+          color="yellow"
+          sx={{
+            color: "black",
+            fontWeight: "bold",
+            borderRadius: ".8rem",
+            padding: "1rem 1.5rem",
+            boxShadow: " -1px 10px 28px -8px rgba(255,255,48,0.7)",
+            "&:hover": { boxShadow: "none" },
+          }}
+          variant="contained"
+          endIcon={<KeyboardArrowRightOutlined />}
+        >
+          Book Your Free Trail, Now{" "}
+        </Button>
+        
       </Container>
     </Box>
   );
