@@ -159,7 +159,7 @@ const Section2 = () => {
         })}
         <KeyboardArrowRightOutlined sx={{cursor:'pointer'}} />
       </Container>
-      <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',marginTop:'1rem'}} >
+      <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',marginTop:'2rem'}} >
       <Button
             fontWeight="bold"
             color="yellow"

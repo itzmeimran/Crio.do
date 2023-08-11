@@ -8,7 +8,7 @@ import Section3 from './Section3'
 
 const App = () => {
   return (
-    <div style={{display:'flex',flexDirection:'column',gap:'1rem'}}>
+    <div style={{display:'flex',flexDirection:'column',gap:'2rem'}}>
       <Banner />
       <Navbar />
       <Section1 />
