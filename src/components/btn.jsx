@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const Btn = ({ text, endIcon,padding }) => {
+const Btn = ({ text, endIcon,padding,maxWidth,width,alignSelf }) => {
   return (
     <Button
       variant="contained"
@@ -12,7 +12,7 @@ const Btn = ({ text, endIcon,padding }) => {
           color: "btn.main",
           backgroundColor: "btn.background",
         },
-        padding:{padding},backgroundColor:'transparent'
+        padding:{padding},backgroundColor:'transparent',width:width,maxWidth:maxWidth,alignSelf:alignSelf
       }}
       style={{ border: "2px solid black",borderRadius:'.8rem' }}
     >
