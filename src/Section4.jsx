@@ -47,7 +47,10 @@ const Section4 = () => {
         padding: "2rem",
         borderRadius: "1rem",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: { xs: "center", lg: "space-between" },
+        maxWidth: "1150px",gap:'1rem',
+        flexWrap: "wrap",
+        alignItems: "center",margin:'0 auto'
       }}
     >
       <Box
@@ -56,7 +59,7 @@ const Section4 = () => {
           flexDirection: "column",
           gap: "1rem",
           textAlign: "center",
-          width: "900px",
+          width: "652px",
         }}
       >
         <img
@@ -78,30 +81,58 @@ const Section4 = () => {
             flexWrap: "wrap",
             justifyContent: "space-between",
             borderRadius: "1rem",
-            width: "700px",
+            width: "651px",
             gap: "1rem",
             padding: "1rem",
           }}
         >
-          <Box sx={{ display: "flex", width: "280px",textAlign:'left',gap:'.5rem' }}>
+          <Box
+            sx={{
+              display: "flex",
+              width: "280px",
+              textAlign: "left",
+              gap: ".5rem",
+            }}
+          >
             <CheckCircleIcon sx={{ color: "olive.light" }} />
             <Typography sx={{ color: "white" }} variant="subtitle2">
               Project-led MERN or Backend Specialisation
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", width: "280px",textAlign:'left',gap:'.5rem' }}>
+          <Box
+            sx={{
+              display: "flex",
+              width: "280px",
+              textAlign: "left",
+              gap: ".5rem",
+            }}
+          >
             <CheckCircleIcon sx={{ color: "olive.light" }} />
             <Typography sx={{ color: "white" }} variant="subtitle2">
               DS, Algo, and System Design curriculum{" "}
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", width: "280px",textAlign:'left',gap:'.5rem' }}>
+          <Box
+            sx={{
+              display: "flex",
+              width: "280px",
+              textAlign: "left",
+              gap: ".5rem",
+            }}
+          >
             <CheckCircleIcon sx={{ color: "olive.light" }} />
             <Typography sx={{ color: "white" }} variant="subtitle2">
               Externships with Real Tech Companies{" "}
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", width: "280px",textAlign:'left',gap:'.5rem' }}>
+          <Box
+            sx={{
+              display: "flex",
+              width: "280px",
+              textAlign: "left",
+              gap: ".5rem",
+            }}
+          >
             <CheckCircleIcon sx={{ color: "olive.light" }} />
             <Typography sx={{ color: "white" }} variant="subtitle2">
               Guaranteed Placement in top dev roles{" "}
@@ -201,7 +232,7 @@ const Section4 = () => {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          width: "500px",
+          width: "426.4px",
         }}
       >
         {feats.map((feat, index) => {
@@ -242,6 +273,7 @@ const Section4 = () => {
               padding: "1rem .8rem",
               borderRadius: "10px",
               border: "2px solid white",
+              fontWeight: "bold",
             }}
             endIcon={<KeyboardArrowRightOutlined />}
           >
@@ -262,7 +294,7 @@ const Section4 = () => {
             variant="contained"
             endIcon={<KeyboardArrowRightOutlined />}
           >
-            Book Your Free Trail, Now{" "}
+            Apply Now{" "}
           </Button>
         </Box>
       </Box>

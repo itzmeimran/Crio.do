@@ -8,13 +8,12 @@ import Btn from "./components/btn";
 const Navbar = () => {
   const menu = ["Hire from Crio", "Projects", "Blog"];
   return (
-    <Container
-      maxWidth="xl"
+    <Box
       sx={{
-        padding: "1rem 0",
+        padding: "1rem 1.3rem",width:'100vw',
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",position:'fixed',zIndex:'5',marginTop:'2rem',backgroundColor:'primary.main'
+        alignItems: "center",position:'fixed',zIndex:'5',marginTop:'2.5rem',backgroundColor:'primary.main'
       }}
     >
       <Box>
@@ -72,7 +71,7 @@ const Navbar = () => {
         <Btn endIcon={<KeyboardArrowRight />} text='Sign In'  />
         <Button fontWeight='bold' color='yellow' sx={{color:'black',fontWeight:'bold',borderRadius:'.8rem'}} variant='contained' endIcon={<KeyboardArrowRight />}>Book Your Free Trail, Now </Button>
       </Box>
-    </Container>
+    </Box>
   );
 };
 

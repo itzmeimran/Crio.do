@@ -48,7 +48,10 @@ const Section5 = () => {
         padding: "2rem",
         borderRadius: "1rem",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: { xs: "center", lg: "space-between" },
+        maxWidth: "1150px",
+        flexWrap: "wrap",
+        alignItems: "center",margin:'0 auto',gap:'1rem'
       }}
     >
       <Box
@@ -57,7 +60,7 @@ const Section5 = () => {
           flexDirection: "column",
           gap: "1rem",
           textAlign: "center",
-          width: "900px",
+          width: "652px",
         }}
       >
         <img
@@ -68,7 +71,11 @@ const Section5 = () => {
         <Typography variant="h6" color="olive.light" fontWeight={"bold"}>
           Fellowship Program in QA Automation (SDET)
         </Typography>
-        <Typography variant="subtitle2" fontSize="16px" sx={{ color: "white",padding:'0rem 1rem' }}>
+        <Typography
+          variant="subtitle2"
+          fontSize="16px"
+          sx={{ color: "white", padding: "0rem 1rem" }}
+        >
           Master QA Automation skills by working on projects like SDETs at top
           product-based companies and get guaranteed placement.
         </Typography>
@@ -79,7 +86,7 @@ const Section5 = () => {
             flexWrap: "wrap",
             justifyContent: "space-between",
             borderRadius: "1rem",
-            width: "700px",
+            width: "651px",
             gap: "1rem",
             padding: "1rem",
           }}
@@ -153,7 +160,7 @@ const Section5 = () => {
               display: "flex",
               justifyContent: "space-between",
               backgroundColor: "#013437",
-              width: "700px",
+              width: "651px",
               padding: "1rem",
               borderRadius: ".8rem",
             }}
@@ -163,7 +170,7 @@ const Section5 = () => {
                 backgroundColor: "#004246",
                 color: "white",
                 padding: "2rem",
-                width: "200px",
+                width: "196px",
                 borderRadius: "1rem",
               }}
             >
@@ -177,7 +184,7 @@ const Section5 = () => {
                 backgroundColor: "#004246",
                 color: "white",
                 padding: "2rem",
-                width: "200px",
+                width: "196px",
                 borderRadius: "1rem",
               }}
             >
@@ -191,7 +198,7 @@ const Section5 = () => {
                 backgroundColor: "#004246",
                 color: "white",
                 padding: "2rem",
-                width: "200px",
+                width: "196px",
                 borderRadius: "1rem",
               }}
             >
@@ -208,7 +215,7 @@ const Section5 = () => {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          width: "500px",
+          width: "426.4px",
         }}
       >
         {feats.map((feat, index) => {
