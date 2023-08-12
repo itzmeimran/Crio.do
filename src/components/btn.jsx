@@ -12,7 +12,7 @@ const Btn = ({ text, endIcon,padding }) => {
           color: "btn.main",
           backgroundColor: "btn.background",
         },
-        padding:{padding}
+        padding:{padding},backgroundColor:'transparent'
       }}
       style={{ border: "2px solid black",borderRadius:'.8rem' }}
     >

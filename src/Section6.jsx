@@ -1,9 +1,10 @@
 import {
   KeyboardArrowLeftSharp,
+  KeyboardArrowRightOutlined,
   KeyboardArrowRightSharp,
   Upgrade,
 } from "@mui/icons-material";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import "./App.css";
 import Accenture from "./assets/Companies/Accenture.png";
 import Amazon from "./assets/Companies/Amazon.png";
@@ -81,6 +82,7 @@ const Section6 = () => {
         upGrad,
       ],
       w: "100px",
+      color: "#D5E927",
     },
     {
       heading: "Hyper growth startups & Soonicorns",
@@ -104,6 +106,7 @@ const Section6 = () => {
         Ather,
       ],
       w: "300px",
+      color: "#81F076",
     },
     {
       heading: "Global tech MNCs",
@@ -125,8 +128,35 @@ const Section6 = () => {
         Tracxn,
       ],
       w: "150px",
+      color: "#2DF8C5",
     },
   ];
+
+  const stats = [
+    {
+      h1: "93%",
+      sub: "placed within 8 months of graduation",
+    },
+    {
+      h1: "11 LPA",
+      sub: "average dream job CTC",
+    },
+    {
+      h1: "22 LPA",
+      sub: "average super-dream job CTC",
+    },
+    {
+      h1: "750+",
+      sub: "Hiring Partners",
+    },
+    {
+      h1: "89%",
+      sub: "Average Salary Hike",
+    },
+
+    // Add more objects if needed
+  ];
+
   return (
     <Box
       sx={{
@@ -170,7 +200,7 @@ const Section6 = () => {
           <Box
             key={i}
             sx={{
-              width: "70vw",
+              width: { xs: "90vw", lg: "70vw" },
               height: "120px",
               backgroundColor: "#F2FBF7",
               borderRadius: "1rem",
@@ -178,7 +208,8 @@ const Section6 = () => {
               alignItems: "center",
               justifyContent: "space-between",
               position: "relative",
-              marginTop:'1rem'
+              marginTop: "1rem",
+              alignSelf: "center",
             }}
           >
             <KeyboardArrowLeftSharp
@@ -187,20 +218,20 @@ const Section6 = () => {
             <Box
               sx={{
                 width: item.w,
-                backgroundColor: "#D5E927",
+                backgroundColor: item.color,
                 textAlign: "center",
                 borderRadius: "1rem",
                 position: "absolute",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                top: "-12px",
+                top: "-2px",
                 padding: "5px",
               }}
             >
               <Typography
                 variant="subtitle2"
                 fontWeight="bold"
-                fontSize={"16px"}
+                sx={{ fontSize: { xs: "12px", md: "12px", lg: "16px" } }}
               >
                 {item.heading}
               </Typography>
@@ -226,6 +257,53 @@ const Section6 = () => {
           </Box>
         );
       })}
+      <Box
+        sx={{
+          backgroundColor: "secondary.main",
+          display: "flex",
+          padding: ".8rem 1.2rem",
+          borderRadius: ".8rem",
+          width: { xs: "90vw", lg: "44vw" },
+          alignSelf: "center",
+        }}
+      >
+        {stats.map((item, index) => {
+          return (
+            <Box
+              key={index}
+              sx={{
+                textAlign: "center",
+                borderRight: item.h1 === "89%" ? "none" : "2px solid #D8D9DA",
+                padding: "0 .8rem",
+              }}
+            >
+              <Typography fontWeight="bold" variant="h5">
+                {item.h1}
+              </Typography>
+              <Typography fontSize="12px" variant="subtitle2">
+                {item.sub}
+              </Typography>
+            </Box>
+          );
+        })}
+      </Box>
+      <Button
+            fontWeight="bold"
+            color="yellow"
+            sx={{
+              color: "black",
+              fontWeight: "bold",
+              boxShadow: " -1px 10px 28px -8px rgba(255,255,48,0.7)",
+              "&:hover": { boxShadow: "none" },
+              width: "40%",minWidth: "300px",
+              padding: "1rem .8rem",
+              borderRadius: "10px",alignSelf:'center'
+            }}
+            variant="contained"
+            endIcon={<KeyboardArrowRightOutlined />}
+          >
+            Book Your Free Trail, Now{" "}
+          </Button>
     </Box>
   );
 };

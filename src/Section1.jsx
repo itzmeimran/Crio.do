@@ -37,7 +37,7 @@ const Section1 = () => {
 
   return (
     <Container
-      sx={{ display: "flex", flexDirection: "row", marginTop: "6.5rem" }}
+      sx={{ display: "flex", flexDirection: "row", marginTop: "6.7rem" }}
     >
       <Box
         sx={{
