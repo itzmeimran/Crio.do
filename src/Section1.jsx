@@ -36,16 +36,26 @@ const Section1 = () => {
   ];
 
   return (
-    <Container
-      sx={{ display: "flex", flexDirection: "row", marginTop: "6.7rem" }}
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        marginTop: "6.7rem",
+        maxWidth: "1150px",
+        alignSelf: "center",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        textAlign: { xs: "center", lg: "left" },
+      }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           gap: "1.2rem",
-          width: "585px",
+          maxWidth: "585px",
           position: "relative",
+          margin: "0 auto",
         }}
       >
         <Typography fontWeight={"bold"} variant="h3">
@@ -89,7 +99,14 @@ const Section1 = () => {
             your dream role at the best tech companies
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            justifyContent: "center",
+          }}
+        >
           <TrendingUpOutlined
             sx={{ fontSize: "1.5rem", color: "btn.background" }}
           />
@@ -106,7 +123,11 @@ const Section1 = () => {
             display: "flex",
             alignContent: "center",
             alignSelf: "center",
+            maxWidth: "550px",
+
             gap: "1rem",
+            flexWrap: "wrap",
+            flexDirection: { xs: "column", md: "row" },
           }}
         >
           <Btn
@@ -138,7 +159,7 @@ const Section1 = () => {
             padding: ".8rem 1.2rem",
             borderRadius: ".8rem",
             position: "absoulute",
-            width: "700px",
+            width: { xs: "100%", md: "650px", lg: "700px" },
           }}
         >
           {stats.map((item, index) => {
@@ -162,14 +183,10 @@ const Section1 = () => {
           })}
         </Box>
       </Box>
-      <Box sx={{ position: "relative" }}>
-        <img
-          style={{ width: "450px", height: "537px" }}
-          src={HomepageHero}
-          alt="hero-section"
-        />
+      <Box sx={{ position: "relative", width: "450px", height: "537px" }}>
+        <img style={{ width: "100%" }} src={HomepageHero} alt="hero-section" />
       </Box>
-    </Container>
+    </Box>
   );
 };
 

@@ -41,16 +41,18 @@ const Section4 = () => {
     },
   ];
   return (
-    <Container
+    <Box
       sx={{
         backgroundColor: "#004246",
         padding: "2rem",
         borderRadius: "1rem",
         display: "flex",
         justifyContent: { xs: "center", lg: "space-between" },
-        maxWidth: "1150px",gap:'1rem',
+        maxWidth: { xs: "600px", md: "1150px" },
+        gap: "1rem",
         flexWrap: "wrap",
-        alignItems: "center",margin:'0 auto'
+        alignItems: "center",
+        margin: "0 auto",
       }}
     >
       <Box
@@ -60,6 +62,7 @@ const Section4 = () => {
           gap: "1rem",
           textAlign: "center",
           width: "652px",
+          padding: "0rem 1rem",
         }}
       >
         <img
@@ -70,26 +73,31 @@ const Section4 = () => {
         <Typography variant="h6" color="olive.light" fontWeight={"bold"}>
           FellowShip Program in Software Development
         </Typography>
-        <Typography variant="subtitle2" fontSize="16px" sx={{ color: "white" }}>
+        <Typography
+          variant="subtitle2"
+          fontSize="16px"
+          sx={{ color: "white", padding: "0rem 1rem" }}
+        >
           Learn with real work experience and get guaranteed placement as a
           Full-Stack or Backend Developer at product-based companies.
         </Typography>
-        <Container
+        <Box
           sx={{
             backgroundColor: "#013437",
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",
             borderRadius: "1rem",
-            width: "651px",
+            maxWidth: { xs: "590px", md: "651px" },
             gap: "1rem",
             padding: "1rem",
+            alignSelf: "center",
           }}
         >
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -102,7 +110,7 @@ const Section4 = () => {
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -115,7 +123,7 @@ const Section4 = () => {
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -128,7 +136,7 @@ const Section4 = () => {
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -138,13 +146,15 @@ const Section4 = () => {
               Guaranteed Placement in top dev roles{" "}
             </Typography>
           </Box>
-        </Container>
+        </Box>
         <Box
           sx={{
             display: "flex",
             backgroundColor: "transparent",
             justifyContent: "center",
             alignItems: "center",
+            flexWrap: "wrap",
+            flexDirection: { xs: "column", md: "row" },
           }}
         >
           <Box
@@ -153,7 +163,7 @@ const Section4 = () => {
               flexDirection: "column",
               gap: "1rem",
               backgroundColor: "#013437",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               padding: "1rem",
               borderRadius: "1rem",
             }}
@@ -202,7 +212,7 @@ const Section4 = () => {
               flexDirection: "column",
               gap: "1rem",
               backgroundColor: "#013437",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               padding: "1rem",
               borderRadius: "1rem",
             }}
@@ -232,7 +242,7 @@ const Section4 = () => {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          width: "426.4px",
+          maWwidth: "426.4px",
         }}
       >
         {feats.map((feat, index) => {
@@ -246,7 +256,7 @@ const Section4 = () => {
                 gap: "1rem",
                 alignItems: "center",
                 padding: "1rem",
-                borderRadius: "1rem",
+                borderRadius: ".5rem",
               }}
             >
               {feat.icon}
@@ -298,7 +308,7 @@ const Section4 = () => {
           </Button>
         </Box>
       </Box>
-    </Container>
+    </Box>
   );
 };
 

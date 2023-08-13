@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import QA from "./assets/QA.png";
 import React from "react";
 import Fellowship from "./assets/Fellowship.png";
@@ -42,16 +42,18 @@ const Section5 = () => {
     },
   ];
   return (
-    <Container
+    <Box
       sx={{
         backgroundColor: "#004246",
         padding: "2rem",
         borderRadius: "1rem",
         display: "flex",
         justifyContent: { xs: "center", lg: "space-between" },
-        maxWidth: "1150px",
+        maxWidth: { xs: "600px", md: "1150px" },
         flexWrap: "wrap",
-        alignItems: "center",margin:'0 auto',gap:'1rem'
+        alignItems: "center",
+        margin: "0 auto",
+        gap: "1rem",
       }}
     >
       <Box
@@ -61,6 +63,7 @@ const Section5 = () => {
           gap: "1rem",
           textAlign: "center",
           width: "652px",
+          padding: "0rem 1rem",
         }}
       >
         <img
@@ -79,22 +82,23 @@ const Section5 = () => {
           Master QA Automation skills by working on projects like SDETs at top
           product-based companies and get guaranteed placement.
         </Typography>
-        <Container
+        <Box
           sx={{
             backgroundColor: "#013437",
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",
             borderRadius: "1rem",
-            width: "651px",
+            maxWidth: { xs: "590px", md: "651px" },
             gap: "1rem",
             padding: "1rem",
+            alignSelf: "center",
           }}
         >
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -108,7 +112,7 @@ const Section5 = () => {
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -121,7 +125,7 @@ const Section5 = () => {
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -135,7 +139,7 @@ const Section5 = () => {
           <Box
             sx={{
               display: "flex",
-              width: "280px",
+              width: { xs: "100%", md: "280px" },
               textAlign: "left",
               gap: ".5rem",
             }}
@@ -146,7 +150,7 @@ const Section5 = () => {
               Log 4j{" "}
             </Typography>
           </Box>
-        </Container>
+        </Box>
         <Box
           sx={{
             display: "flex",
@@ -160,9 +164,11 @@ const Section5 = () => {
               display: "flex",
               justifyContent: "space-between",
               backgroundColor: "#013437",
-              width: "651px",
+              width: { xs: "100%", md: "651px" },
               padding: "1rem",
               borderRadius: ".8rem",
+              flexWrap: "wrap",
+              gap:{xs:'1rem',md:'0'}
             }}
           >
             <Box
@@ -170,7 +176,7 @@ const Section5 = () => {
                 backgroundColor: "#004246",
                 color: "white",
                 padding: "2rem",
-                width: "196px",
+                width: { xs: "100%", md: "190px" },
                 borderRadius: "1rem",
               }}
             >
@@ -184,7 +190,7 @@ const Section5 = () => {
                 backgroundColor: "#004246",
                 color: "white",
                 padding: "2rem",
-                width: "196px",
+                width: { xs: "100%", md: "190px" },
                 borderRadius: "1rem",
               }}
             >
@@ -198,7 +204,7 @@ const Section5 = () => {
                 backgroundColor: "#004246",
                 color: "white",
                 padding: "2rem",
-                width: "196px",
+                width: { xs: "100%", md: "190px" },
                 borderRadius: "1rem",
               }}
             >
@@ -215,7 +221,7 @@ const Section5 = () => {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          width: "426.4px",
+          maxWidth: "426.4px",
         }}
       >
         {feats.map((feat, index) => {
@@ -280,7 +286,7 @@ const Section5 = () => {
           </Button>
         </Box>
       </Box>
-    </Container>
+    </Box>
   );
 };
 

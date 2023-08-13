@@ -1,5 +1,4 @@
-import { Box, Button, Container, Typography } from "@mui/material";
-import React from "react";
+import { Box, Button, Typography } from "@mui/material";
 import PointOne from "./assets/PointOne.png";
 import PointTwo from "./assets/PointTwo.png";
 import PointThree from "./assets/PointThree.png";
@@ -50,14 +49,15 @@ const Section3 = () => {
         gap: "1rem",
       }}
     >
-      <Container
+      <Box
         sx={{
           textAlign: "center",
           padding: "0 1rem",
-          width: "950px",
+          maxWidth: "950px",
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
+          margin: "0 auto",
         }}
       >
         <Typography variant="h4" fontWeight="bold">
@@ -67,7 +67,7 @@ const Section3 = () => {
           variant="subtitle2"
           sx={{
             color: "gray",
-            width: "850px",
+            maxWidth: "850px",
             textAlign: "center",
             alignSelf: "center",
           }}
@@ -99,8 +99,8 @@ const Section3 = () => {
           </Typography>{" "}
           Fullstack/Backend Developers or SDET Jobs.
         </Typography>
-      </Container>
-      <Container
+      </Box>
+      <Box
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -136,33 +136,34 @@ const Section3 = () => {
             </Box>
           );
         })}
-        <Container
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <Button
+          fontWeight="bold"
+          color="yellow"
           sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginTop: "2rem",
+            color: "black",
+            fontWeight: "bold",
+            borderRadius: ".8rem",
+            padding: "1rem 1.5rem",
+            boxShadow: " -1px 10px 28px -8px rgba(255,255,48,0.7)",
+            "&:hover": { boxShadow: "none" },
           }}
+          variant="contained"
+          endIcon={<KeyboardArrowRightOutlined />}
         >
-          <Button
-            fontWeight="bold"
-            color="yellow"
-            sx={{
-              color: "black",
-              fontWeight: "bold",
-              borderRadius: ".8rem",
-              padding: "1rem 1.5rem",
-              boxShadow: " -1px 10px 28px -8px rgba(255,255,48,0.7)",
-              "&:hover": { boxShadow: "none" },
-            }}
-            variant="contained"
-            endIcon={<KeyboardArrowRightOutlined />}
-          >
-            Book Your Free Trail, Now{" "}
-          </Button>
-        </Container>
-        <Container sx={{display:'flex',flexDirection:'column',gap:'1.2rem'}}>
-          <Container maxWidth="sm">
+          Book Your Free Trail, Now{" "}
+        </Button>
+      </Box>
+      <Box sx={{display:'flex',flexDirection:'column',gap:'1.2rem',margin:'0 auto',alignItems:'center'}}>
+          <Box maxWidth="sm">
             {" "}
             <Typography
               sx={{ alignSelf: "center", textAlign: "center" }}
@@ -172,8 +173,8 @@ const Section3 = () => {
               Immersive Work Ex-Based Programs To Crack Jobs At The
               Fastest-Growing Companies
             </Typography>
-          </Container>
-          <Container maxWidth="md">
+          </Box>
+          <Box maxWidth="md" sx={{margin:'0 auto'}}>
             <Typography fontSize={'16px'} variant="subtitle2" sx={{ color: "gray",textAlign:'center' }}>
               Learn the skills you need to land a Fullstack/Backend Developers
               or SDET Job at a top product company.<Typography fontSize='16px' component='span' fontWeight={'bold'} sx={{color:'black'}}>Gain the work experience of
@@ -181,9 +182,8 @@ const Section3 = () => {
               Flipkart, and more, with continuous guidance and support from our
               mentors.
             </Typography>
-          </Container>
-        </Container>
-      </Container>
+          </Box>
+        </Box>
     </Box>
   );
 };

@@ -33,7 +33,7 @@ const Section2 = () => {
     },
   ];
   return (
-    <Box>
+    <Box >
       <Container
         maxWidth="md"
         sx={{
@@ -49,7 +49,10 @@ const Section2 = () => {
         <Typography sx={{ width: "400px" }} variant="h4" fontWeight={"bold"}>
           Modern Work Experience-Based Learning Approach
         </Typography>
-        <Typography variant="subtitle2" sx={{ color: "gray", width: "700px" }}>
+        <Typography
+          variant="subtitle2"
+          sx={{ color: "gray", maxWidth: "700px" }}
+        >
           At Crio, you learn and grow exactly how you would on a real job. You
           will start from the fundamentals, receive support from our mentors and
           community,{" "}
@@ -65,13 +68,14 @@ const Section2 = () => {
           development projects.
         </Typography>
       </Container>
-      <Container
-        maxWidth="lg"
+      <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           gap: "2rem",
           alignItems: "center",
+          margin: "0 auto",
+          overflowX:'scroll',padding:'0rem 5rem'
         }}
       >
         <KeyboardArrowLeftOutlined sx={{ cursor: "pointer" }} />
@@ -85,7 +89,7 @@ const Section2 = () => {
                 height: "475px",
                 padding: "1rem",
                 backgroundColor: "secondary.main",
-                borderRadius: "14px",
+                borderRadius: "14px",border:'1px solid black'
               }}
             >
               <Container
@@ -150,7 +154,7 @@ const Section2 = () => {
                         key={index}
                         style={{
                           border: "2px solid black",
-                          width: "100px",
+                          width: "90px",
                           borderRadius: "10px",
                         }}
                       >
@@ -164,7 +168,7 @@ const Section2 = () => {
           );
         })}
         <KeyboardArrowRightOutlined sx={{ cursor: "pointer" }} />
-      </Container>
+      </Box>
       <Container
         sx={{
           display: "flex",
@@ -189,7 +193,6 @@ const Section2 = () => {
         >
           Book Your Free Trail, Now{" "}
         </Button>
-        
       </Container>
     </Box>
   );

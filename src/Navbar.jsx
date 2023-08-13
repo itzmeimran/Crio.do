@@ -36,7 +36,7 @@ const Navbar = () => {
           alt="img"
         />
       </Box>
-      <Box sx={{ display: { xs: "none", md: "flex" }, gap: ".5rem" }}>
+      <Box sx={{ display: { xs: "none", md: "flex" }, gap: ".9rem" }}>
         <Typography
           variant="subtitle2"
           fontWeight="bold"
