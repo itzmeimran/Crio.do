@@ -81,7 +81,7 @@ const Navbar = () => {
         >
           Placements <KeyboardArrowDownSharp />
         </Typography>
-        <Btn endIcon={<KeyboardArrowRight />} text="Sign In" />
+        <Btn endIcon={<KeyboardArrowRight />} width='120px' text="Sign In" />
         <Button
           fontWeight="bold"
           color="yellow"
@@ -160,7 +160,7 @@ const Navbar = () => {
         <Btn
           maxWidth="40vw"
           alignSelf="center"
-          width="300px"
+          width="200px"
           endIcon={<KeyboardArrowRight />}
           text="Sign In"
         />
